@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Grid layout */
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main aside"
+      "footer";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    
+  }
+  
+  /* Asignar áreas */
+  header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  nav {
+    grid-area: nav;
+    background-color: black;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;           
+    padding: 15px 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main {
+    grid-area: main;
+    background-color: #ccc;
+    padding: 20px;
+  }
+  
+  aside {
+    grid-area: aside;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+  }
