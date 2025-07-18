@@ -11,7 +11,7 @@ html, body, main {
 }
 
 html, body {
-  width: 100%;
+  width: var(--width);
   overflow-x: hidden; 
 }
 
@@ -62,7 +62,7 @@ header{
 h2{
     text-align: center;
     padding: 8px;
-    color: #222222;
+    color: var(--color);
 }
 
 main{
@@ -72,7 +72,7 @@ main{
 .weather {
     text-align: center;
     padding: 10px;
-    color: #222222;
+    color: var(--color);
 }
 .emoji {
   display: none;
