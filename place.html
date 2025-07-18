@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="description" content="Eduardo Peralta WDD 131 – Dynamic Web Fundamentals Country Page">
+    <meta name="author" content="Eduardo Peralta">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place_large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mexico</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/mexico_large.webp" media="(min-width: 1200px)">
+                <source srcset="images/mexico_small.webp" media="(max-width: 650px)">
+                <img src="images/mexico.webp" alt="Mexico">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <p><strong>Area: </strong>1,972,550 km2</p>
+            <p><strong>Population: </strong>131,946,900</p>
+            <p><strong>Capital: </strong>Mexico City</p>
+            <p><strong>Language: </strong>Spanish</p>
+            <p><strong>Time Zone: </strong>UTC -6 a -8</p>
+            <p><strong>Calling Code: </strong>+52</p>
+            <p><strong>Internet TLD: </strong>.mx</p>   
+        </section>
+        <section class="weather">
+            <h2>Weather <span class="emoji">⛅</span></h2>
+            <img src="images/weather_icon.svg" alt="weather_icon" class="weather-icon">
+            <p><strong> Temperature: </strong><span id="temperature">35</span> °F</p>
+            <p><strong>Wind Speed: </strong> <span id="windspeed">10</span> mph</p>
+            <p><strong>Wind Chill: </strong> <span id="windchill">N/A</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🪅 Eduardo Peralta. Coahuila, Mexico. 🪅</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

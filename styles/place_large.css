@@ -1,0 +1,47 @@
+@media (min-width: 650px) {
+    .emoji {
+    display: inline;
+    }
+
+    .weather-icon {
+    display: none;
+    }
+
+    .hero  {
+    position: relative;
+    }
+
+    .weather {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 500px;
+    height: auto;
+    margin: 15px;
+    }
+
+    .data{
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 400px;
+        height: auto;
+        border: none;
+        
+    }
+
+    h2 {
+        background-color: rgb(242, 232, 207, 0.7);
+        border-radius: 1rem;
+        text-align: left;
+        padding-left: 1rem;
+        margin: 10px;
+    }
+  
+}
