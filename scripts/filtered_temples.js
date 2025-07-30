@@ -139,12 +139,6 @@ smallLink.addEventListener("click", () => {
     createTemplesCard(temples.filter(temple => temple.area < 10000));
 });
 
-const homeLink = document.querySelector("#home");
-
-homeLink.addEventListener("click", () => {
-    container.innerHTML = ""; 
-    createTemplesCard(temples)
-});
 const container = document.getElementById("cardContainer");
 
 function createTemplesCard(temples){
