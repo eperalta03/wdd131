@@ -1,0 +1,18 @@
+@keyframes fadeFromBlack {
+  0% {
+    opacity: 0;
+    background-color: black;
+  }
+  100% {
+    opacity: 1;
+    background-color: transparent;
+  }
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: 600px;
+    animation: fadeFromBlack 2s ease-out;
+    margin: 14px;
+}

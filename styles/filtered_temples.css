@@ -1,0 +1,113 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: indigo; 
+    color: white;
+    padding: 10px 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+} 
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2); /* leve fondo oscuro */
+    border-radius: 4px;
+    position: relative;
+    z-index: 1001; 
+}
+
+@media (max-width: 768px) {
+    
+    nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(147, 94, 185);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1000;
+  }
+  
+    nav.show {
+        display: flex;
+        background-color: rgb(147, 94, 185);
+        color: white;
+    }
+
+    nav a {
+        margin: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .card-container {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .card {
+        display: inline-block;
+        width: 380px;
+        border: 1px solid rgb(0, 0, 0, 0.5);
+        margin: 10px;
+        background-color: rgb(209, 208, 208);
+    }
+
+    .card strong{
+        color: indigo;
+    }
+
+    .card img{
+        box-shadow: 0 4px 8px rgba(0, 0, 0);
+        border-radius: 4px;
+        width:100%;
+        object-fit: cover
+    }
+}
+
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header.h1 {
+font-weight: bold;
+font-size: 1.2rem;
+}
+
+
+main { 
+max-width: 800px;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr; 
+gap: 16px;
+padding: 16px;
+justify-content: center;
+text-align: center;
+}
+
+
+footer {
+    background-color: indigo;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+
