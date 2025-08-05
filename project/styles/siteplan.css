@@ -1,0 +1,16 @@
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #CC6600;
+  text-align: center;
+  
+}
+
+body, p {
+  font-family: 'Merriweather', serif;
+}
+
+header {
+    background-color: #556B2F;
+    
+}
+
