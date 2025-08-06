@@ -50,7 +50,7 @@
         border-radius: 6px;
     }
 
-    input[type="text"],  input[type="textarea"] {
+    input[type="text"]{
         background-color: rgb(131, 197, 190, .3);
         display: block;
         border: 1px solid black;
@@ -62,11 +62,18 @@
         appearance: none;
     }
 
-    input[type="textarea"] {
-        height: 100px;
-        vertical-align: top;
-        padding-top: 0;
-        resize: vertical; 
+    .styled-textarea {
+        background-color: rgba(131, 197, 190, 0.3);
+        display: block;
+        border: 1px solid black;
+        border-radius: 6px;
+        padding: 0.75rem;
+        color: #555;
+        width: 100%;
+        max-width: 400px;
+        appearance: none;
+        resize: vertical;
+        font-size: 1rem;
     }
 
     input[type="submit"] {
