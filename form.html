@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="Eduardo Peralta WDD 131 – Dynamic Web Fundamentals Form Assigment" />
+    <meta name="author" content="Eduardo Peralta"/>
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/form_large.css" />
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="form">
+            <fieldset>
+                <div>
+                    <p><strong>Product Name </strong></p>
+                    <label>
+                        <select id="productSelect" name="product" required>
+                            <option value="">Choose a Product... &#9662;</option> 
+                        </select>
+                    </label>
+                </div>
+                <div class="rating-container"> 
+                    <p><strong>Overall Rating</strong></p>
+                    <div class="rating-group">
+                        <label class="rating-label">☆<input type="radio" name="star" id="star1" value="1" required></label>
+                        <label class="rating-label">☆☆<input type="radio" name="star" id="star2" value="2"></label>
+                        <label class="rating-label">☆☆☆<input type="radio" name="star" id="star3" value="3"></label>
+                        <label class="rating-label">☆☆☆☆<input type="radio" name="star" id="star4" value="4"></label>
+                        <label class="rating-label">☆☆☆☆☆<input type="radio" name="star" id="star5" value="5"></label>
+                    </div>
+                </div>
+                <div>
+                    <p><strong>Date of Installation</strong> </p>
+                    <label><input type="date" name="installDate" required></label>
+                </div>
+                <div id="checkbox">
+                    <p><strong>Which features did you find useful in the product?</strong></p>
+                    <p id="check">(Check all that apply)</p>
+                    <label class="checkbox"><input type="checkbox" name="durability" id="durability" value="yes" required>Durability</label>
+                    <label class="checkbox"><input type="checkbox" name="ease" id="ease" value="yes">Ease of Use</label>
+                    <label class="checkbox"><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
+                    <label class="checkbox"><input type="checkbox" name="design" id="design" value="yes">Design</label>
+                </div>
+                <div>
+                    <p><strong>Which features did you find useful in the product</strong> (optional) </p>
+                    <label><input type="textarea" name="review" id="review"></label>
+                </div>
+                <div>
+                    <p><strong>Your name </strong>(optional) </p>
+                    <label><input type="text" name="name" id="name"></label>
+                </div>
+                <div>
+                    <label><input type="submit" value="Post Review"></label>
+                </div>    
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Eduardo Peralta. Coahuila, Mexico.</p>
+        <p id="lastModified"></p>
+    </footer>     
+</body>
+</html>
