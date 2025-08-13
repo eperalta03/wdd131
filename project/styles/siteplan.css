@@ -239,7 +239,7 @@ footer {
   }
 
   .about img {
-    width: 250px;
+    width: 220px;
     height: auto;
     margin: 0 auto;
   }
@@ -307,9 +307,9 @@ footer {
   }
   
   select {
-    width: 80%;
+    width: 65%;
   }
   input[type="submit"] {
-    width: 300px;
+    width: 250px;
   }
 }
