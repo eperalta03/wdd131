@@ -291,7 +291,7 @@ footer {
   }
 
   .tips {
-    margin:10px 4rem;
+    margin:0 auto;
     border-bottom: 1px solid rgb(0, 0, 0);
   }
   .tips ul{
