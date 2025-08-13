@@ -17,7 +17,7 @@ hamburger.addEventListener('click', () => {
   }
 });
 
-if (window.location.pathname.endsWith('/') || window.location.pathname.endsWith('/siteplan.html'))  {
+if (window.location.pathname.endsWith('/') || window.location.pathname.endsWith('/mexican_ruins.html'))  {
     const ruins = [
     {
         name: "Teotihuacán",
