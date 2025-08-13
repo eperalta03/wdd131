@@ -307,7 +307,7 @@ footer {
   }
   
   select {
-    width: 65%;
+    width: 300px;
   }
   input[type="submit"] {
     width: 250px;
