@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body, p {
+  font-family: 'Merriweather', serif;
+}
+
+header {
+    background-color: #556B2F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px; 
+    margin-bottom: 10px;
+}
+
+header h2{
+  color: white;
+  font-size: 2rem;
+}
+
+header img {
+  width: 100px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Merriweather', serif;
+  margin: 8px;
+  padding: 0;
+  font-size: 17.5px;
+} 
+ 
+nav a:hover {
+  background-color: rgba(136, 171, 76, 0.8);
+  color: #8B4513;
+  border-radius: 4px;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2); 
+  border-radius: 4px;
+  position: relative;
+  z-index: 1001; 
+}
+
+main {
+    margin: 5rem 8rem;
+    padding: 5rem;
+}
+
+main p{
+    margin-top: 1rem;
+}
+footer {
+  background-color: #556B2F;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  nav.show {
+    display: flex;
+    background-color: #6B8E23;
+    color: white;
+  }
+
+  nav a {
+    margin: 10px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}

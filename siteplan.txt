@@ -1,0 +1,17 @@
+<p><strong>Site purpose: </strong></p>
+        <p>This site highlights the most important ancient ruins of Mexico and encourages visitors to explore them. It provides historical context, cultural insights, and practical tips for visiting, including travel recommendations and accessibility information.</p>
+        <p><strong>Scenarios: </strong></p>
+        <p>What are the most important ancient ruins to visit in Mexico?</p>
+        <p>Where can I find tips for planning a visit to these archaeological sites?</p>
+        <p><strong>Color Schema: </strong></p>
+        <p>Burnt Orange (#CC6600)</p>
+        <p>Usage: Headings, titles, buttons, and accents.</p>
+        <p>Olive Green (#556B2F)</p>
+        <p>Usage: Backgrounds for sections, navigation bar, and links.</p>
+        <p><strong>Typography: </strong></p>
+        <p>Monserrat</p>
+        <p>Usage: Headings and titles</p>
+        <p>Merriweather </p>
+        <p>Usage: Body text and paragraphs</p>
+        <p>Roboto Slab </p>
+        <p>Usage: Subheadings, quotes, or callouts</p>

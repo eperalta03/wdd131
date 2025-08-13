@@ -15,33 +15,106 @@
 </head>
 <body>
     <header>
+        <img src="images/logo.jpg" alt="logo" loading="lazy">
         <h2>Ruins of Ancient Mexico</h2> 
         <!--I chose the title "Ruins of Ancient Mexico" because it represents the history and culture of the civilizations that gave rise to my country. 
         These ruins are witnesses of the past and help us understand mexican roots.-->
-        <img src="images/logo.jpg" alt="logo">
+        <button class="hamburger" id="hamburger">☰</button>
+        <nav id="nav">
+            <a href="siteplan.html">Home</a>
+            <a href="#" id="maya">Maya Ruins</a>
+            <a href="#" id="zapotec">Zapotec Ruins</a>
+            <a href="#" id="teotihuacano">Teotihuacano Ruins</a>
+        </nav>
     </header>
     <main>
-        <p><strong>Site purpose: </strong></p>
-        <p>This site highlights the most important ancient ruins of Mexico and encourages visitors to explore them. It provides historical context, cultural insights, and practical tips for visiting, including travel recommendations and accessibility information.</p>
-        <p><strong>Scenarios: </strong></p>
-        <p>What are the most important ancient ruins to visit in Mexico?</p>
-        <p>Where can I find tips for planning a visit to these archaeological sites?</p>
-        <p><strong>Color Schema: </strong></p>
-        <p>Burnt Orange (#CC6600)</p>
-        <p>Usage: Headings, titles, buttons, and accents.</p>
-        <p>Olive Green (#556B2F)</p>
-        <p>Usage: Backgrounds for sections, navigation bar, and links.</p>
-        <p><strong>Typography: </strong></p>
-        <p>Monserrat</p>
-        <p>Usage: Headings and titles</p>
-        <p>Merriweather </p>
-        <p>Usage: Body text and paragraphs</p>
-        <p>Roboto Slab </p>
-        <p>Usage: Subheadings, quotes, or callouts</p>
-
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero.webp" media="(min-width: 1200px)" loading="lazy">
+                <source srcset="images/hero_small.webp" media="(max-width: 650px)" loading="lazy">
+                <img src="images/hero.webp" alt="Mexican Ruins" loading="lazy">
+            </picture>
+        </div>
+        <section class="purpose">
+                <p>This site highlights the most important ancient ruins of Mexico and encourages visitors to explore them. It provides historical context, cultural insights, and practical tips for visiting, including travel recommendations and accessibility information.</p>
+        </section>
+        <section class="about">
+            <h1>About</h1>
+            <img src="images/about.webp" alt="Edzna Ruins" loading="lazy">
+            <div class="about_text">
+                <p>Welcome to our journey through Mexico’s most remarkable ancient ruins. This website is dedicated to exploring the rich history, culture, and architecture of some of the most iconic archaeological sites across the country.</p>
+                <p>Whether you are a history enthusiast, a student, or a curious traveler, here you will find detailed information, stunning visuals, and interactive features to deepen your understanding of these incredible places.</p>
+                <p>Our goal is to inspire appreciation for Mexico’s heritage and encourage visitors to discover these wonders firsthand. Join us as we uncover the stories behind the stones and the civilizations that built them.</p>
+            </div>
+        </section>
+        <h1 class="ruins">Notable Ruins</h1>
+        <section id="cardContainer" class="card-container"></section>
+        <section class="tips">
+            <h1>Visit tips</h1>
+            <ul>
+                <li><strong>Step into comfort</strong> – Wear sturdy, comfy shoes so every step through history is a pleasure.</li>
+                <li><strong>Dress for the journey</strong> – Light, airy clothes keep you cool under the warm Mexican sun.</li>
+                <li><strong>Stay refreshed</strong> – Bring enough water to sip as you wander between ancient stones.</li>
+                <li><strong>Shield yourself from the sun</strong> – A wide-brimmed hat, sunscreen, and sunglasses are your best friends.</li>
+                <li><strong>Catch the magic early</strong> – Arrive in the morning for soft light, cool air, and peaceful paths.</li>
+                <li><strong>Bring your lens to life</strong> – Capture the beauty and details (where photography is allowed).</li>
+                <li><strong>Tread with care</strong> – Respect restricted areas and help preserve the ruins for generations to come.</li>
+                <li><strong>Listen and imagine</strong> – Let local guides’ stories transport you to the time these walls were alive.</li>
+            </ul>
+        </section>
+        <section class="opinion">
+            <h1>Your Opinion Matters</h1>
+            <form method="get" action="ruins_review.html" class="form">
+                <fieldset>
+                    <div class="select">
+                        <label>
+                            <p><strong>What is your favorite ruin in Mexico? </strong></p>
+                            <select id="ruinSelect" name="ruin" required>
+                                <option value="">Choose from the list...</option> 
+                                <option value="teotihuacan">Teotihuacán</option>
+                                <option value="chichen_itza">Chichén Itzá</option>
+                                <option value="palenque">Palenque</option>
+                                <option value="monte_alban">Monte Albán</option>
+                                <option value="tajin">El Tajín</option>
+                                <option value="uxmal">Uxmal</option>
+                                <option value="coba">Cobá</option>
+                                <option value="tulum">Tulum</option>
+                                <option value="mitla">Mitla</option>
+                                <option value="yagul">Yagul</option>
+                                <option value="quetzacoatl">Quetzacoatl Temple</option>
+                                <option value="quemada">La Quemada</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <p><strong>Have you ever visited any of these ruins</strong></p>
+                        <label><input type="radio" name="visited" value="yes" required>Yes</label>
+                        <label><input type="radio" name="visited" value="no">No</label>
+                    </div>
+                    <div id="checkbox">
+                        <p><strong>What would you like to learn more about the ruins?</strong> (Check all that apply) </p>
+                        <label class="checkbox"><input type="checkbox" name="history" value="yes">History and culture</label>
+                        <label class="checkbox"><input type="checkbox" name="architecture" value="yes">Architecture and design</label>
+                        <label class="checkbox"><input type="checkbox" name="legends" value="yes">Legends and myths</label>
+                        <label class="checkbox"><input type="checkbox" name="archaeology" value="yes">Conservation and archaeology</label>
+                        <label class="checkbox"><input type="checkbox" name="tourism" value="yes">Tourism and accessibility</label>
+                    </div>
+                    <div>
+                    <label>
+                        <p><strong>Do you have any suggestions or comments to improve this website? </strong>(optional) </p>
+                        <textarea name="review" id="review" class="styled-textarea" ></textarea>
+                    </label>
+                </div>
+                <div>
+                    <label><input type="submit" value="Send My Opinion"></label>
+                </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
     <footer>
-        <p>Mobile View and Large View: </p> <img src="images/sketch.jpg" alt="">
+        <p>©<span id="currentyear"></span> 🐒 Eduardo Peralta. Coahuila, Mexico. 🐒</p>
+        <p id="lastModified"></p>
     </footer>
     
 </body>

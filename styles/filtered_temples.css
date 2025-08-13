@@ -20,7 +20,7 @@ nav a {
     color: white;
     font-size: 2rem;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.2); /* leve fondo oscuro */
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     position: relative;
     z-index: 1001; 
