@@ -306,6 +306,9 @@ footer {
     margin: 2rem;
   }
   
+  select {
+    width: 80%;
+  }
   input[type="submit"] {
     width: 300px;
   }
